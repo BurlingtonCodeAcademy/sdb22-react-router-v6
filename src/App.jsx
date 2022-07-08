@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route path="*" element={ <NotFound /> }/>
         <Route path="/" element={ <Home /> }/>
-        <Route path="/about" element={ <AboutMe /> }/>
+        <Route path="/about/:username" element={ <AboutMe /> }/>
         <Route path="/contact" element={ <Contact /> }/>
         <Route path="/mainroute">
           <Route path="subroute" element={ <NotFound /> } />
